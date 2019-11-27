@@ -34,15 +34,10 @@ This query can be used the following attack techniques and tactics ([see MITRE A
 
 ## Contribution info
 
-- **Name:**
-- **Organization:**
-- **GitHub alias:**
-- **Contact info:**
+**Name:** < your name >
 
-**Name:**
+**GitHub alias:** < your github alias >
 
-**Organization:**
+**Organization:** < your org >
 
-**GitHub alias:**
-
-**Contact info:**
+**Contact info:** < email or website >
