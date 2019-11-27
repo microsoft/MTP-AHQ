@@ -1,7 +1,7 @@
 
 # Files from malicious sender
 
-This query checks devices for files that have been sent by a known malicious sender.To use this query, replace the email address with the address of the known malicious sender.
+This query checks devices for files that have been sent by a known malicious sender. To use this query, replace the email address with the address of the known malicious sender.
 
 ## Query
 
