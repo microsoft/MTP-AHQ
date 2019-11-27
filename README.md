@@ -26,5 +26,17 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
+## How to contribute
+
+Everyone can freely add a file for a new query or improve on existing queries in the **[queries folder](https://github.com/microsoft/MTP/tree/master/queries)**. To help other users locate new queries quickly, we suggest that you:
+
+- Create a new MarkDown file with contents based on the [query submission template](00-query-submission-template.md)   
+- In the new file:
+    - Provide a name for the query that represents the components or activities that it searches for, e.g. `Files from malicious sender` 
+    - Describe the query and provide sufficient guidance when applicable
+    - Select the categories that apply by marking the appropriate cell with a "v"
+- Use the query name as the title, separating each word with a hyphen (-), e.g. `files-from-malicious-sender.md`
+
+
 # Suggestions and feedback
 We maintain a backlog of suggested sample queries in the project [issues page](https://github.com/Microsoft/MTP/issues). Feel free to comment, rate, or provide suggestions.
