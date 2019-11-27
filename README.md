@@ -28,9 +28,9 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## How to contribute
 
-Everyone can freely add a file for a new query or improve on existing queries in the **[queries folder](https://github.com/microsoft/MTP/tree/master/queries)**. To help other users locate new queries quickly, we suggest that you:
+Everyone can freely add a file for a new query or improve on existing queries in the [queries folder](https://github.com/microsoft/MTP/tree/master/queries). To help other users locate new queries quickly, we suggest that you:
 
-- Create a new MarkDown file with contents based on the [query submission template](00-query-submission-template.md)   
+- Create a new MarkDown file in the [queries folder](https://github.com/microsoft/MTP/tree/master/queries) with contents based on the [query submission template](queries\00-query-submission-template.md)   
 - In the new file:
     - Provide a name for the query that represents the components or activities that it searches for, e.g. `Files from malicious sender` 
     - Describe the query and provide sufficient guidance when applicable
