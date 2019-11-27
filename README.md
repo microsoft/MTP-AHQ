@@ -1,4 +1,17 @@
 
+# Advanced hunting queries for Microsoft Threat Protection
+This repo contains sample queries for [Advanced hunting](https://security.microsoft.com/hunting) on [Microsoft Threat Protection](https://aka.ms/mtp-docs).
+With these sample queries, you can start to experience Advanced hunting, including the types of data that it covers and the query language it supports. You can also explore a variety of attack techniques and how they may be surfaced through Advanced hunting.
+
+To get started, simply paste a sample query into the query builder and run the query. If you get syntax errors, try removing empty lines introduced when pasting. If a query returns no results, try expanding the time range. 
+
+We are continually building up documentation about Advanced hunting and its data schema. You can access the full list of tables and columns in the portal or reference the following resources:
+
+- [Advanced hunting overview](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview)
+- [Language overview](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-language)
+- [Schema tables descriptions](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-schema-tables)
+- [Kusto query language reference](https://docs.microsoft.com/azure/kusto/query/)
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
@@ -12,3 +25,6 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+# Suggestions and feedback
+We maintain a backlog of suggested sample queries in the project [issues page](https://github.com/Microsoft/MTP/issues). Feel free to comment, rate, or provide suggestions.
