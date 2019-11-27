@@ -1,20 +1,28 @@
 
-# < Insert query name >
+# Files from malicious sender
 
-< Provide query description and usage tips >
+This query checks devices for files that have been sent by a known malicious sender.To use this query, replace the email address with the address of the known malicious sender.
 
 ## Query
 
 ```
-< Insert query string here >
+//Get prevalence of files sent by a malicious sender in your organization
+EmailAttachmentInfo
+| where SenderFromAddress =~ "MaliciousSender@example.com"
+| where isnotempty(SHA256)
+| join (
+FileCreationEvents
+| project FileName, SHA256
+) on SHA256
 ```
+
 ## Category
 
 This query can be used the following attack techniques and tactics ([see MITRE ATT&CK framework](https://attack.mitre.org/)) or security configuration states.
 
 | Technique/Tactic/State | Covered? (v=yes) | Notes |
 |------------------------|----------|-------|
-| Initial access |  |  |
+| Initial access | v | Checks for the presence of potentially malicious files on devices sent via email |
 | Execution |  |  |
 | Persistence |  |  | 
 | Privilege escalation |  |  |
@@ -29,13 +37,6 @@ This query can be used the following attack techniques and tactics ([see MITRE A
 | Vulnerability |  |  |
 | Misconfiguration |  |  |
 
-
 ## Contributor info
 
-**Name:** < your name >
-
-**GitHub alias:** < your github alias >
-
-**Organization:** < your org >
-
-**Contact info:** < email or website >
+**Contributor:** Microsoft Threat Protection team
