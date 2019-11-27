@@ -26,7 +26,7 @@ This query can be used the following attack techniques and tactics ([see MITRE A
 | Vulnerability |  |  |
 | Misconfiguration |  |  |
 
-# Query
+## Query
 
 ```
 < Insert query string here >
@@ -34,7 +34,15 @@ This query can be used the following attack techniques and tactics ([see MITRE A
 
 ## Contribution info
 
+- **Name:**
+- **Organization:**
+- **GitHub alias:**
+- **Contact info:**
+
 **Name:**
+
 **Organization:**
+
 **GitHub alias:**
+
 **Contact info:**
