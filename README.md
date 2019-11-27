@@ -1,6 +1,6 @@
 
 # Advanced hunting queries for Microsoft Threat Protection
-This repo contains sample queries for [Advanced hunting](https://security.microsoft.com/hunting) on [Microsoft Threat Protection](https://aka.ms/mtp-docs).
+This repo contains sample queries for [Advanced hunting](https://security.microsoft.com/hunting) in [Microsoft Threat Protection](https://aka.ms/mtp-docs).
 With these sample queries, you can start to experience Advanced hunting, including the types of data that it covers and the query language it supports. You can also explore a variety of attack techniques and how they may be surfaced through Advanced hunting.
 
 To get started, simply paste a sample query into the query builder and run the query. If you get syntax errors, try removing empty lines introduced when pasting. If a query returns no results, try expanding the time range. 
