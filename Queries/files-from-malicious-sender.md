@@ -1,7 +1,7 @@
 
 # Files from malicious sender
 
-This query checks devices for files that have been sent by a known malicious sender. To use this query, replace the email address with the address of the known malicious sender.
+This query checks devices for the presence of files that have been sent by a known malicious sender. To use this query, replace the email address with the address of the known malicious sender.
 
 ## Query
 
@@ -20,7 +20,7 @@ FileCreationEvents
 
 This query can be used the following attack techniques and tactics ([see MITRE ATT&CK framework](https://attack.mitre.org/)) or security configuration states.
 
-| Technique/Tactic/State | Covered? (v=yes) | Notes |
+| Technique, tactic, or state | Covered? (v=yes) | Notes |
 |------------------------|----------|-------|
 | Initial access | v | Checks for the presence of potentially malicious files on devices sent via email |
 | Execution |  |  |
@@ -36,6 +36,7 @@ This query can be used the following attack techniques and tactics ([see MITRE A
 | Impact |  |  |
 | Vulnerability |  |  |
 | Misconfiguration |  |  |
+| Malware, component |  |  |
 
 ## Contributor info
 

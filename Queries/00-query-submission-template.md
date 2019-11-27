@@ -12,7 +12,7 @@
 
 This query can be used the following attack techniques and tactics ([see MITRE ATT&CK framework](https://attack.mitre.org/)) or security configuration states.
 
-| Technique/Tactic/State | Covered? (v=yes) | Notes |
+| Technique, tactic, or state | Covered? (v=yes) | Notes |
 |------------------------|----------|-------|
 | Initial access |  |  |
 | Execution |  |  |
@@ -28,11 +28,12 @@ This query can be used the following attack techniques and tactics ([see MITRE A
 | Impact |  |  |
 | Vulnerability |  |  |
 | Misconfiguration |  |  |
+| Malware, component |  |  |
 
 
 ## Contributor info
 
-**Name:** < your name >
+**Contributor:** < your name >
 
 **GitHub alias:** < your github alias >
 
