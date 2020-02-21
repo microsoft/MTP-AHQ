@@ -10,11 +10,11 @@ This query finds the 10 latest logons performed by email recipients within 30 mi
 //Find logons that occurred right after malicious email was received
 let MaliciousEmail=EmailEvents
 | where MalwareFilterVerdict == "Malware" 
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmail
 | join (
-LogonEvents
-| project LogonTime = EventTime, AccountName, ComputerName
+IdentityLogonEvents
+| project LogonTime = Timestamp, AccountName, ComputerName
 ) on AccountName 
 | where (LogonTime - TimeEmail) between (0min.. 30min)
 | take 10
