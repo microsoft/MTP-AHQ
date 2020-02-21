@@ -11,7 +11,7 @@ EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
 | where isnotempty(SHA256)
 | join (
-FileCreationEvents
+DeviceFileEvents
 | project FileName, SHA256
 ) on SHA256
 ```
