@@ -13,10 +13,10 @@ let x=EmailEvents
 | project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 x
 | join (
-ProcessCreationEvents
+DeviceProcessEvents
 | where FileName =~ "powershell.exe"
 //| where InitiatingProcessParentFileName =~ "outlook.exe"
-| project TimeProc = EventTime, AccountName, ComputerName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project TimeProc = EventTime, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
 ) on AccountName 
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
