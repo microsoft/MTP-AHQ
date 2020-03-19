@@ -10,13 +10,13 @@ Malicious emails often contain documents and other specially crafted attachments
 //Find PowerShell activities right after email was received from malicious sender
 let x=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
-| project TimeEmail = EventTime, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+| project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 x
 | join (
 DeviceProcessEvents
 | where FileName =~ "powershell.exe"
 //| where InitiatingProcessParentFileName =~ "outlook.exe"
-| project TimeProc = EventTime, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| project TimeProc = Timestamp, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
 ) on AccountName 
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
