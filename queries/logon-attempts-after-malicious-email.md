@@ -14,7 +14,7 @@ let MaliciousEmail=EmailEvents
 MaliciousEmail
 | join (
 IdentityLogonEvents
-| project LogonTime = Timestamp, AccountName, ComputerName
+| project LogonTime = Timestamp, AccountName, DeviceName
 ) on AccountName 
 | where (LogonTime - TimeEmail) between (0min.. 30min)
 | take 10
